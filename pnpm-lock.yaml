@@ -6,8 +6,8 @@ settings:
 
 dependencies:
   '@polymedia/webutils':
-    specifier: ^2.0.1
-    version: 2.0.1
+    specifier: ^2.0.2
+    version: 2.0.2
 
 devDependencies:
   '@types/react':
@@ -123,8 +123,8 @@ packages:
       fastq: 1.15.0
     dev: true
 
-  /@polymedia/webutils@2.0.1:
-    resolution: {integrity: sha512-Ym3bev447KUZ8Lmd79X1G0OfmvC5InoRzu/WwmRCcmtoYOqk88BSD8pdTab0OvVXdP2hi/a0wy/V11bTJlQkiw==}
+  /@polymedia/webutils@2.0.2:
+    resolution: {integrity: sha512-Wbqmbraw93NGgRHQ6+BXDu2DabHNRiVY5kUBfdLR2sL785eBvy2sP1/c8hr7Quh7yBY5ovjuTkwq9CQtGElBng==}
     dev: false
 
   /@types/json-schema@7.0.12:
