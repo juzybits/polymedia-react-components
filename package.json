@@ -1,29 +1,11 @@
 {
-    "name": "@polymedia/react-components",
-    "description": "React components for Sui apps",
+    "private": false,
     "version": "1.2.2",
-    "license": "Apache-2.0",
+    "name": "@polymedia/react-components",
     "author": "@juzybits (https://polymedia.app)",
     "homepage": "https://polymedia.app",
-    "main": "dist/cjs/index.js",
-    "module": "dist/esm/index.js",
-    "types": "dist/esm/index.d.ts",
-    "exports": {
-        "source": "./src/index.ts",
-        "import": "./dist/esm/index.js",
-        "require": "./dist/cjs/index.js"
-    },
-    "scripts": {
-        "lint": "eslint ./src --ext .ts,.tsx",
-        "build": "rm -rf dist/ && tsc -p tsconfig.cjs.json && tsc -p tsconfig.esm.json",
-        "prepublishOnly": "pnpm build"
-    },
-    "files": [
-        "dist/",
-        "src/",
-        "LICENSE",
-        "README.md"
-    ],
+    "description": "React components for Sui apps",
+    "license": "Apache-2.0",
     "repository": {
         "type": "git",
         "url": "https://github.com/juzybits/polymedia-react-components"
@@ -34,6 +16,11 @@
         "react",
         "components"
     ],
+    "scripts": {
+        "lint": "eslint ./src --ext .ts,.tsx",
+        "build": "rm -rf dist/ && tsc -p tsconfig.cjs.json && tsc -p tsconfig.esm.json",
+        "prepublishOnly": "pnpm build"
+    },
     "dependencies": {
         "@polymedia/webutils": "^2.3.4"
     },
@@ -42,14 +29,28 @@
         "react-dom": "^18.0.0"
     },
     "devDependencies": {
-        "@types/react": "^18.2.25",
-        "@types/react-dom": "^18.2.11",
-        "@typescript-eslint/eslint-plugin": "^6.7.4",
-        "@typescript-eslint/parser": "^6.7.4",
-        "eslint": "^8.51.0",
+        "@types/react": "^18.2.34",
+        "@types/react-dom": "^18.2.14",
+        "@typescript-eslint/eslint-plugin": "^6.9.1",
+        "@typescript-eslint/parser": "^6.9.1",
+        "eslint": "^8.53.0",
         "eslint-plugin-deprecation": "^1.5.0",
         "react": "^18.2.0",
         "react-dom": "^18.2.0",
         "typescript": "^5.2.2"
+    },
+    "files": [
+        "dist/",
+        "src/",
+        "LICENSE",
+        "README.md"
+    ],
+    "main": "dist/cjs/index.js",
+    "module": "dist/esm/index.js",
+    "types": "dist/esm/index.d.ts",
+    "exports": {
+        "source": "./src/index.ts",
+        "import": "./dist/esm/index.js",
+        "require": "./dist/cjs/index.js"
     }
 }
